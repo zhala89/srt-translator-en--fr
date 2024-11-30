@@ -1,0 +1,11 @@
+---
+services:
+    transformers-notebook:
+        image: jupyter/tensorflow-notebook
+        ports:
+            - "7000:8888"
+        environment:
+            - JUPYTER_TOKEN=IAMZHALA
+        volumes:
+            - ./:/home/jovyan
+...
